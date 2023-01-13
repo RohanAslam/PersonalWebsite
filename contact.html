@@ -37,12 +37,17 @@
           </p>
         </div>
 
-        <form id="feedback-form" class="feedback-body">
+        <form
+          id="feedback-form"
+          class="feedback-body"
+          onsubmit="sendEmail(); reset(); return false"
+        >
           <input
-            id="feedback-email"
+            id="feedback-name"
             class="feedback-body__email"
             placeholder="Name"
             type="name"
+            required
           />
 
           <input
@@ -50,6 +55,7 @@
             class="feedback-body__email"
             placeholder="Email"
             type="email"
+            required
           />
           <textarea
             id="feedback-message"
@@ -62,6 +68,18 @@
           </button>
         </form>
       </div>
+      <script src="https://smtpjs.com/v3/smtp.js"></script>
+      <script>
+        function sendEmail() {
+          Host: "smtp.gmail.com";
+          Username: "rohaanaslam24@gmail.com";
+          Password: "@R5186405p.";
+          To: "rohaanaslam24@gmail.com";
+          From: document.getElementById("feedback-email").value;
+          Subject: "Contact Form Inquiry";
+          Body: "Message:";
+        }
+      </script>
     </main>
 
     <footer>

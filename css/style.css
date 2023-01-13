@@ -346,6 +346,7 @@ table tr td {
   width: 40%;
 }
 #feedback-email,
+#feedback-name,
 #feedback-submit,
 #feedback-message {
   border: 2px solid rgba(0, 0, 0, 0.6);
@@ -361,6 +362,7 @@ table tr td {
 }
 
 #feedback-email:focus,
+#feedback-name:focus,
 #feedback-submit:focus,
 #feedback-message:focus {
   outline: none;
