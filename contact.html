@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Rohan Aslam | CCT260 Final Project</title>
+    <title>Rohan Aslam</title>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -10,72 +10,57 @@
     <header>
       <h1>Rohan Aslam</h1>
 
-      <nav>
-        <ul>
-          <li><a href="home.html">Home</a></li>
-          <li><a href="work.html">My Work</a></li>
-          <li><a href="resume.html">My Resume</a></li>
-          <li><a href="contact.html">Contact Me</a></li>
-          <li><a href="process.html">Process</a></li>
+      <nav id="nav">
+        <ul id="navigation">
+          <li><a href="index.html" class="first">Home</a></li>
+          <li>
+            <a href="#">My Work &raquo;</a>
+            <ul>
+              <li><a href="work.html">Coding</a></li>
+              <li><a href="work.html">Creative Work</a></li>
+              <li><a href="work.html">Photography</a></li>
+            </ul>
+          </li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="process.html" class="last">Process</a></li>
         </ul>
       </nav>
     </header>
 
-    <div class="spotlight">
-      <img src="images/spotlight4.jpg" alt="Spotlight Image" />
-      <div class="spotlight-text">
-        <h2>Let's Talk!</h2>
-      </div>
-    </div>
-
     <main>
-      <div class="touch">
-        <div class="info">
-          <h1>Contact Information</h1>
+      <div id="feedback-card" class="feedback-card">
+        <div id="feedback-header" class="feedback-header">
+          <h1>GET IN TOUCH</h1>
           <p>
-            <span class="method">Email:</span> Rohanaslam24@gmail.com
-            <br />
-            <br />
-            <span class="method">Phone:</span> 647-915-4939
-            <br />
-            <br />
-            <span class="method">Location:</span> Toronto, ON
+            Feel free to connect with me for professional or social reasons!
           </p>
         </div>
 
-        <div class="meet">
-          <h1>Let's Meet Up!</h1>
-          <span class="map">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d184551.80858184173!2d-79.51814199446794!3d43.718403811497105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb90d7c63ba5%3A0x323555502ab4c477!2sToronto%2C%20ON!5e0!3m2!1sen!2sca!4v1670719057765!5m2!1sen!2sca"
-              width="600"
-              height="450"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </span>
-        </div>
-      </div>
+        <form id="feedback-form" class="feedback-body">
+          <input
+            id="feedback-email"
+            class="feedback-body__email"
+            placeholder="Name"
+            type="name"
+          />
 
-      <div class="contact">
-        <h1>Reach Me Directly</h1>
-        <fieldset>
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" />
-          <br />
-          <br />
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" />
-          <br />
-          <br />
-          <label for="message">Message:</label>
-          <textarea id="message" name="message"></textarea>
-          <br />
-          <br />
-          <input type="submit" class="submit" value="Send" />
-        </fieldset>
+          <input
+            id="feedback-email"
+            class="feedback-body__email"
+            placeholder="Email"
+            type="email"
+          />
+          <textarea
+            id="feedback-message"
+            class="feedback-body__message"
+            placeholder="MESSAGE"
+            type="text"
+          ></textarea>
+          <button id="feedback-submit" class="feedback-body__submit">
+            SEND
+          </button>
+        </form>
       </div>
     </main>
 
