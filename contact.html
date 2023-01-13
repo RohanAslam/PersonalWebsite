@@ -40,7 +40,8 @@
         <form
           id="feedback-form"
           class="feedback-body"
-          onsubmit="sendEmail(); reset(); return false"
+          action="https://formsubmit.co/6575ed0f55110299646784d9829ce2ce"
+          method="POST"
         >
           <input
             id="feedback-name"
@@ -68,18 +69,6 @@
           </button>
         </form>
       </div>
-      <script src="https://smtpjs.com/v3/smtp.js"></script>
-      <script>
-        function sendEmail() {
-          Host: "smtp.gmail.com";
-          Username: "rohaanaslam24@gmail.com";
-          Password: "@R5186405p.";
-          To: "rohaanaslam24@gmail.com";
-          From: document.getElementById("feedback-email").value;
-          Subject: "Contact Form Inquiry";
-          Body: "Message:";
-        }
-      </script>
     </main>
 
     <footer>
