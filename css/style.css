@@ -227,6 +227,8 @@ footer {
   background-color: #ecffff;
   padding: 20px 0;
   width: 100%;
+  position: fixed;
+  bottom: 0;
 }
 .footer-container {
   max-width: 1200px;
