@@ -61,11 +61,11 @@ ul#navigation li a:hover {
   color: #000;
 }
 
-ul#navigation li a.first {
+ul#navigation li a#first {
   border-left: 0 none;
 }
 
-ul#navigation li a.last {
+ul#navigation li a#last {
   border-right: 0 none;
 }
 
@@ -572,4 +572,18 @@ table tr td {
 }
 html {
   scroll-behavior: smooth;
+}
+.transition-3 {
+  position: fixed;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 101;
+  background-color: #5deefc;
+  transition: 0.5s ease-out;
+}
+
+.transition-3.is-active {
+  top: 0;
 }
