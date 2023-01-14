@@ -1,5 +1,6 @@
 body {
   background: #fff;
+  width: 100%;
 }
 header {
   width: 100%;
@@ -11,7 +12,7 @@ header h1 {
     "URW Chancery L", cursive;
   font-size: 80px;
   color: #28282b;
-  margin-left: 460px;
+  text-align: center;
   padding-top: 25px;
   letter-spacing: 3px;
 }
@@ -23,13 +24,16 @@ header h1 {
   margin-top: -10px;
   margin-left: 363px;
   padding: 40px;
+  padding-bottom: 0px;
   background-color: #ecffff;
+  text-align: center;
 }
 
 ul#navigation {
   margin: 0px auto;
   position: relative;
-  float: left;
+  text-align: left;
+  display: inline-block;
 }
 
 ul#navigation li {
@@ -129,7 +133,7 @@ ul#navigation ul li a {
   border: 1px solid #666;
 }
 main {
-  width: 1280px;
+  width: 90%;
   margin: 0 auto;
 }
 #bio {
@@ -483,4 +487,7 @@ table tr td {
   100% {
     left: 0;
   }
+}
+
+@media only screen and (min-width: 768px) {
 }
