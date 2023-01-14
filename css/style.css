@@ -22,7 +22,6 @@ header h1 {
   width: 620px;
   margin: 0 auto;
   margin-top: -10px;
-  margin-left: 363px;
   padding: 40px;
   padding-bottom: 0px;
   background-color: #ecffff;
@@ -127,10 +126,10 @@ ul#navigation ul li a {
 #profile-photo {
   width: 280px;
   float: right;
-  margin-left: 20px;
-  margin-right: 100px;
   padding: 1px;
   border: 1px solid #666;
+  margin-right: 50px;
+  margin-left: 50px;
 }
 main {
   width: 90%;
@@ -161,6 +160,71 @@ main h1 {
   padding-right: 50px;
   padding-bottom: 30px;
   line-height: 26pt;
+}
+#land {
+  width: 100%;
+}
+.para h1 {
+  padding-left: 45px;
+}
+#welcome {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper {
+  display: flex;
+  margin-bottom: -13px;
+}
+.wrapper .static-txt {
+  color: #000;
+  font-size: 60px;
+  font-weight: 400;
+  padding-top: 15px;
+}
+.wrapper .dynamic-txts {
+  margin-left: 15px;
+  height: 90px;
+  line-height: 90px;
+  overflow: hidden;
+}
+.dynamic-txts li {
+  list-style: none;
+  color: #5deefc;
+  font-size: 60px;
+  font-weight: 500;
+  position: relative;
+  top: 0;
+  animation: slide 12s steps(4) infinite;
+}
+@keyframes slide {
+  100% {
+    top: -360px;
+  }
+}
+.dynamic-txts li span {
+  position: relative;
+  margin: 5px 0;
+  line-height: 90px;
+}
+.dynamic-txts li span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 112%;
+  width: 100%;
+  background: #fff;
+  border-left: 2px solid #000000;
+  animation: typing 3s steps(10) infinite;
+}
+@keyframes typing {
+  40%,
+  60% {
+    left: calc(100% + 30px);
+  }
+  100% {
+    left: 0;
+  }
 }
 footer {
   background-color: #ecffff;
@@ -429,65 +493,20 @@ table tr td {
   font-size: 60px;
   font-weight: 100;
 }
-#welcome {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.wrapper {
-  display: flex;
-  margin-bottom: -13px;
-}
-.wrapper .static-txt {
-  color: #000;
-  font-size: 60px;
-  font-weight: 400;
-  padding-top: 15px;
-}
-.wrapper .dynamic-txts {
-  margin-left: 15px;
-  height: 90px;
-  line-height: 90px;
-  overflow: hidden;
-}
-.dynamic-txts li {
-  list-style: none;
-  color: #5deefc;
-  font-size: 60px;
-  font-weight: 500;
-  position: relative;
-  top: 0;
-  animation: slide 12s steps(4) infinite;
-}
-@keyframes slide {
-  100% {
-    top: -360px;
+@media (width: 390px) {
+  body {
+    width: 100%;
   }
-}
-.dynamic-txts li span {
-  position: relative;
-  margin: 5px 0;
-  line-height: 90px;
-}
-.dynamic-txts li span::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  height: 112%;
-  width: 100%;
-  background: #fff;
-  border-left: 2px solid #000000;
-  animation: typing 3s steps(10) infinite;
-}
-@keyframes typing {
-  40%,
-  60% {
-    left: calc(100% + 30px);
-  }
-  100% {
-    left: 0;
-  }
-}
+  #land {
+    top: 50%; /* IMPORTANT */
 
-@media only screen and (min-width: 768px) {
+    display: block;
+    width: 100%;
+  }
+  #profile-photo {
+    margin: 0px;
+  }
+  #welcome {
+    float: left;
+  }
 }
