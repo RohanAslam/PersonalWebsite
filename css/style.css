@@ -23,7 +23,7 @@ header h1 {
   position: relative;
   width: 620px;
   margin: 0 auto;
-  padding: 10px;
+  padding: 0px;
   background-color: #ecffff;
   text-align: center;
 }
@@ -124,7 +124,7 @@ ul#navigation ul li a {
 
 /*break here*/
 #profile-photo {
-  height: 480px;
+  height: 430px;
   padding: 1px;
   border: 1px solid rgb(110, 240, 255);
 }
@@ -173,7 +173,7 @@ main h1 {
 .para h1 {
   display: flex;
   justify-content: center;
-  margin-left: -150px;
+  margin-left: -180px;
 }
 #welcome {
   display: flex;
@@ -221,7 +221,7 @@ main h1 {
   content: "";
   position: absolute;
   left: 0;
-  height: 112%;
+  height: 113%;
   width: 100%;
   background: #fff;
   border-left: 2px solid #000000;
@@ -523,4 +523,53 @@ table tr td {
   #welcome {
     float: left;
   }
+}
+.scroll-down {
+  height: 50px;
+  width: 30px;
+  border: 2px solid black;
+  position: absolute;
+  left: 90%;
+  bottom: 20px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.scroll-down::before,
+.scroll-down::after {
+  content: "";
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  border: 2px solid black;
+  height: 10px;
+  width: 10px;
+  transform: translate(-50%, -100%) rotate(45deg);
+  border: 2px solid black;
+  border-top: transparent;
+  border-left: transparent;
+  animation: scroll-down 1s ease-in-out infinite;
+}
+.scroll-down::before {
+  top: 30%;
+  animation-delay: 0.3s;
+}
+
+@keyframes scroll-down {
+  0% {
+    /* top:20%; */
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    top: 90%;
+    opacity: 0;
+  }
+}
+html {
+  scroll-behavior: smooth;
 }
