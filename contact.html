@@ -43,12 +43,14 @@
           action="https://formsubmit.co/95850f64cee46bcad1f7f5cb31494df0"
           method="POST"
         >
+          <input type="text" name="_honey" style="display: none" />
+          <input type="hidden" name="_captcha" value="false" />
           <input
             id="feedback-name"
             class="feedback-body__email"
             placeholder="Name"
             type="name"
-            name="name"
+            name="Name"
             required
           />
 
@@ -57,14 +59,14 @@
             class="feedback-body__email"
             placeholder="Email"
             type="email"
-            name="email"
+            name="Email"
             required
           />
           <textarea
             id="feedback-message"
             class="feedback-body__message"
             placeholder="MESSAGE"
-            name="message"
+            name="Message"
             type="text"
           ></textarea>
           <button id="feedback-submit" class="feedback-body__submit">
