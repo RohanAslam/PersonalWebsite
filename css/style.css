@@ -373,11 +373,10 @@ table tr td {
   margin-bottom: 30px;
 }
 .intro p {
-  margin-left: 48px;
-  margin-right: 70px;
   font-size: 18px;
   color: #000;
   line-height: 26pt;
+  font-family: "Times New Roman", Times, serif;
 }
 .intro iframe {
   display: block;
@@ -390,30 +389,37 @@ table tr td {
   margin-bottom: 308px;
 }
 .policy li,
-.process li {
+.process li,
+.design li {
   list-style-type: decimal;
   margin-top: 10px;
   font-size: 18px;
-  font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+  font-family: "Times New Roman", Times, serif;
   margin-left: 50px;
+  line-height: 26pt;
 }
 .policy p,
 .process p,
-.design p {
+.design p,
+.gallery-title p {
   list-style-type: decimal;
   margin-top: 20px;
   font-size: 18px;
-  font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+  font-family: "Times New Roman", Times, serif;
   color: #000;
   line-height: 26pt;
 }
-.process ol {
+.process ol,
+.design ol {
   margin-bottom: 35px;
   line-height: 16pt;
+  font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+  font-size: 18px;
 }
 main .process h1,
 main .policy h1,
-.design h1 {
+main .design h1,
+.gallery-title {
   margin-left: -45px;
   font-family: "Times New Roman", Times, serif;
 }
@@ -528,8 +534,8 @@ main .policy h1,
   }
 }
 .scroll-down {
-  height: 50px;
-  width: 30px;
+  height: 100px;
+  width: 50px;
   border: 2px solid black;
   position: absolute;
   left: 90%;
@@ -595,4 +601,19 @@ html {
   height: 975px;
   display: block;
   margin: 0 auto;
+}
+.bolded {
+  font-weight: bold;
+}
+#figma {
+  display: block;
+  margin: 0 auto;
+}
+#git-photo {
+  height: 430px;
+  padding: 1px;
+  border: 1px solid rgb(110, 240, 255);
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 50px;
 }
