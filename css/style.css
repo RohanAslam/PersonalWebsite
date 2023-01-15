@@ -57,7 +57,7 @@ ul#navigation li a {
 }
 
 ul#navigation li a:hover {
-  background: #f8f8f8;
+  background: #5deefc;
   color: #000;
 }
 
@@ -69,7 +69,7 @@ ul#navigation li a#last {
   border-right: 0 none;
 }
 
-ul#navigation li:hover > a {
+ul#navigation li:hover > a na {
   background: #5deefc;
 }
 ul#navigation li:hover > ul {
