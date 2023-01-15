@@ -398,7 +398,8 @@ table tr td {
   margin-left: 50px;
 }
 .policy p,
-.process p {
+.process p,
+.design p {
   list-style-type: decimal;
   margin-top: 20px;
   font-size: 18px;
@@ -410,9 +411,11 @@ table tr td {
   margin-bottom: 35px;
   line-height: 16pt;
 }
-.process h1,
-.policy h1 {
+main .process h1,
+main .policy h1,
+.design h1 {
   margin-left: -45px;
+  font-family: "Times New Roman", Times, serif;
 }
 .process img {
   width: 80%;
@@ -586,4 +589,10 @@ html {
 
 .transition-3.is-active {
   top: 0;
+}
+#mypdf {
+  width: 90%;
+  height: 975px;
+  display: block;
+  margin: 0 auto;
 }
