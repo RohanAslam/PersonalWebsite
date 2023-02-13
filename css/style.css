@@ -429,6 +429,10 @@ main .design h1,
   margin-left: 130px;
   margin-bottom: 20px;
 }
+.process #git {
+  width: auto;
+  display: inline-block;
+}
 #wireframe {
   height: 800px;
   width: 40%;
@@ -616,4 +620,70 @@ html {
   display: block;
   margin: 0 auto;
   margin-bottom: 50px;
+}
+.con {
+  display: flex;
+  width: 100%;
+  padding: 2% 2%;
+  box-sizing: border-box;
+  height: 80vh;
+}
+
+.box {
+  flex: 1;
+  overflow: hidden;
+  transition: 0.5s;
+  margin: 0 2%;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+  line-height: 0;
+  position: relative;
+}
+
+.box a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-decoration: none;
+}
+
+.box img {
+  width: 200%;
+  height: calc(100% - 10vh);
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+.box span {
+  font-size: 3.8vh;
+  display: block;
+  text-align: center;
+  height: 10vh;
+  line-height: 2.6;
+  color: #28282b;
+}
+
+.box:hover {
+  flex: 1 1 50%;
+}
+.box:hover > a > img {
+  width: 100%;
+  height: 100%;
+}
+.wireframe-container {
+  display: flex;
+}
+
+.wireframe {
+  width: 31%;
+  text-align: center;
+  margin-right: 3%;
+}
+.wireframe img {
+  width: 80%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
